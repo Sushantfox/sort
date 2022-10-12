@@ -5,6 +5,17 @@ class Main {
 
   public static void main(String[] args) {
 
+    // create a map and store elements to it
+    LinkedHashMap<String, String> capitals = new LinkedHashMap();
+    capitals.put("Nepal", "Kathmandu");
+    capitals.put("India", "New Delhi");
+    capitals.put("United States", "Washington");
+    capitals.put("England", "London");
+    capitals.put("Australia", "Canberra");
+
+    // call the sortMap() method to sort the map
+    Map<String, String> result = sortMap(capitals);
+
     for (Map.Entry entry : result.entrySet()) {
       System.out.print("Key: " + entry.getKey());
       System.out.println(" Value: " + entry.getValue());
